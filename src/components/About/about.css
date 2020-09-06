@@ -1,0 +1,93 @@
+.about{
+    background-color: #fafafa;
+    /* padding-top: 219px; */
+    min-height: 560px;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.about_title{
+    color: #000000;
+    font-family: "GTWalsheimProBlack";
+    font-size: 40px;
+    letter-spacing: 1.2px;
+    max-width: 551px;
+}
+
+.about_details{
+    max-width: 533px;
+}
+
+.details_info{
+    opacity: 0.8;
+    color: #919eab;
+    font-family: "GTWalsheimProMedium";
+    font-size: 20px;
+    letter-spacing: 0.6px;
+    margin-bottom: 41px;
+}
+
+.advantages_item{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: #919eab;
+    font-family: "GTWalsheimProBold";
+    font-size: 20px;
+    letter-spacing: 0.6px;
+    margin-bottom: 21px;
+}
+
+.about_wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+
+.done_icon{
+    max-width: 34px;
+    height: auto;
+    margin-right: 23px;
+}
+
+@media screen and (max-width: 765px){
+    .about_wrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .about_title{
+        margin-bottom: 26px;
+    }
+    .about{
+        min-height: 450px;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .about_title{
+        font-size: 20px;
+        letter-spacing: 0.6px;
+        margin-bottom: 26px;
+    }
+    .details_info{
+        font-size: 12px;
+        letter-spacing: 0.36px;
+        margin-bottom: 25px;
+    }
+    .advantages_item{
+        font-size: 10px;
+        font-weight: 700;
+        letter-spacing: 0.3px;
+        margin-bottom: 8px;
+    }
+    .done_icon{
+        max-width: 17px;
+    }
+    .about{
+        min-height: 190px;
+        padding: 25px 0px;
+    }
+  }

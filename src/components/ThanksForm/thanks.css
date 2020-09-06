@@ -1,0 +1,229 @@
+.thanks_form-wrapper{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.thanks_title{
+    color: #000000;
+    font-family: "GTWalsheimProBlack";
+    font-size: 40px;
+    letter-spacing: 1.2px;
+    margin: 21px 0px;
+}
+
+.thanks_subtitle{
+    opacity: 0.71;
+    color: #919eab;
+    font-family: "GTWalsheimProMedium";
+    font-size: 20px;
+    letter-spacing: 0.6px;
+    margin-bottom: 23px;
+}
+
+.form_success{
+    display: flex;
+    justify-content: center;
+}
+
+.form{
+    width: 60%;
+    box-shadow: 0 3px 32px rgba(0, 0, 0, 0.14);
+    border-radius: 40px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    padding: 48px 80px 60px;
+}
+
+.label_form{
+    color: #000000;
+    font-size: 14px;
+    letter-spacing: 0.2px;
+    line-height: 20px;
+    margin-bottom: 23px;
+}
+
+.looking_for-active,
+.type_website-active{
+    border-radius: 8px;
+    background-color: #f2f5ff;
+    text-shadow: 0 0 .65px #2a62ff, 0 0 .65px #2a62ff;
+    color: #2a62ff;
+    border: 3px solid #2a62ff;
+    cursor: pointer;
+    outline: none;
+    width: 48%;
+}
+
+.form_but{
+    border-radius: 8px;    
+    background-color: #fafafa;
+    opacity: 0.5;
+    color: #000000;
+    font-size: 16px;
+    letter-spacing: 0.22px;
+    line-height: 20px;
+    padding: 14px 10px 17px 10px;
+    border: none;
+    width: 48%;
+    cursor: pointer;
+}
+
+#looking_for,
+#type_website{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 36px;
+}
+
+#comment,
+#api_schema{
+    border-radius: 8px;
+    background-color: #fafafa;
+    width: 100%;
+    padding: 18px 0px 16px 20px;
+    border: none;
+    opacity: 0.5;
+    color: #000000;
+    font-size: 12px;
+    letter-spacing: 0.17px;
+    line-height: 20px;
+    margin-bottom: 36px;
+    outline: none;
+}
+
+.form_title{
+    display: none;
+    color: #000000;
+    font-family: "GTWalsheimProBlack";
+    font-size: 22px;
+    letter-spacing: 0.66px;
+    margin-bottom: 13px;
+}
+
+.MuiButtonBase-root.MuiButton-root.MuiButton-contained.button_form.MuiButton-containedPrimary{
+    background-color: #4b6fff;
+    min-height: 50px;
+}
+@media screen and (max-width: 1300px){
+    .form{
+        width: 80%;
+    }
+}
+@media screen and (max-width: 1024px){
+    .form{
+        width: 90%;
+    }
+    .MuiButtonBase-root.MuiButton-root.MuiButton-contained.button_form.MuiButton-containedPrimary{
+        min-height: 38px;
+    }
+    .looking_for-active, .type_website-active{
+        padding: 14px 10px 17px 10px;
+    }
+}
+@media screen and (max-width: 670px){
+    .form{
+        width: 100%;
+        height: auto;
+        padding: 18px 25px 50px 25px;
+        border-radius: 10px;
+    }
+    .thanks_form{
+        margin-top: 20px;
+    }
+    .form_title{
+        display: block;
+    }
+    .form_but,
+    .looking_for-active,
+    .type_website-active{
+        min-width: 111px;
+        font-size: 8px;
+        letter-spacing: 0.11px;
+        line-height: 10px;
+    }
+    #comment,
+    #api_schema,
+    #type_website,
+    #looking_for{
+        margin-bottom: 18px;
+    }
+    #looking_for button{
+        outline: none;
+    }
+    .label_form{
+        font-size: 7px;
+        letter-spacing: 0.1px;
+        line-height: 10px;
+        margin-bottom: 14px;
+    }
+    .looking_for-active,
+    .type_website-active{
+        height: 27px;
+        border-radius: 4px;
+        border: 2px solid #2a62ff;
+        background-color: #f2f5ff;
+        padding: 4px 20px 3px 18px;
+        outline: none;
+    }
+    .form_but{
+        padding: 7px 26px 9px 21px;
+    }
+    #comment,
+    #api_schema{
+        font-size: 7px;
+        letter-spacing: 0.1px;
+        line-height: 12px;
+    }
+    .thanks_title{
+        font-size: 20px;
+        letter-spacing: 0.6px;
+    }
+    .thanks_subtitle{
+        font-size: 12px;
+        letter-spacing: 0.36px;
+    }
+    .smile_form{
+        margin-top: 13px;
+    }
+    .MuiButtonBase-root.MuiButton-root.MuiButton-contained.button_start.MuiButton-containedPrimary{
+        max-width: 175px;
+        font-size: 12px;
+        letter-spacing: 0.36px;
+        padding: 10px 15px 9px 15px;
+    }
+    .success_header-item img{
+        width: 85px;
+    }
+}
+
+@media(max-width: 520px){
+    #looking_for, #type_website{
+        flex-direction: column;
+    }
+    .form_but,
+    .looking_for-active, .type_website-active{
+        width: 100%;
+        margin: 5px 0px;
+    }
+    .form_title{
+        font-family: "GTWalsheimPro";
+    }
+    .MuiButton-label{
+        font-size: 10px;
+    }
+    .MuiButtonBase-root.MuiButton-root.MuiButton-contained.button_form.MuiButton-containedPrimary {
+        min-height: 30px;
+    }
+    .smile_form{
+        width: 60px;
+    }
+    #comment, #api_schema {
+        padding: 9px 0px 9px 20px;
+    }
+    .success_footer-item:first-child{
+        font-size: 14px;
+    }
+}

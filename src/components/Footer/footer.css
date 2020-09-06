@@ -1,0 +1,204 @@
+footer {
+  padding-bottom: 74px;
+}
+
+footer h2 {
+  font-size: 40px;
+}
+
+.services {
+  font-family: 'GTWalsheimProBold';
+  background-color: #e0eaf5;
+  letter-spacing: 0.6px;
+  font-size: 20px;
+}
+
+.services-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 491px;
+}
+
+.services_list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 400px;
+}
+
+.services_list_item {
+  margin-bottom: 51px;
+}
+
+.services_list_item:last-child {
+  margin-bottom: 0;
+}
+
+.services_info {
+  width: 605px;
+  display: flex;
+  flex-direction: column;
+}
+
+.services_title {
+  text-align: start;
+  letter-spacing: 1.2px;
+}
+
+.services_subtitle {
+  margin: 21px 0;
+  text-align: end;
+  color: #919eab;
+  opacity: 0.8;
+}
+
+.services_button {
+  text-align: end;
+}
+
+/* START NOW */
+
+.footer_start {
+  text-align: center;
+}
+
+.start-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.start-form {
+  width: 830px;
+  height: 281px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: -55px;
+  background-color: #4b6fff;
+  border-radius: 10px;
+}
+
+.start_title {
+  margin-bottom: 20px;
+  color: #fff;
+  font-family: 'GTWalsheimProBold';
+}
+
+.footer_start .button_start {
+  color: black !important;
+  background-color: #fff !important;
+  width: 215px;
+  height: 58px;
+}
+
+/* FOOTER LINKS */
+
+.footer_links {
+  margin-top: 204px;
+}
+
+.social_list_item .MuiSvgIcon-root:hover{
+  fill: #2a62ff;
+  transition: 0.3s;
+}
+
+.footer_docs_item:hover{
+  color: #2a62ff;
+  transition: 0.3s;
+}
+.links-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer_docs {
+  margin-top: 50px;
+}
+
+.footer_docs_item{
+  font-size: 14px;
+  color: #000000;
+}
+
+.footer_docs_item:first-child {
+  margin-right: 69px;
+}
+
+.social_list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.social_list_item:nth-child(2) {
+  margin: 0 51px;
+}
+.social_list_item a{
+  color: #000;
+}
+
+.footer_copyright {
+  font-family: 'GTWalsheimProBold';
+  margin-top: 50px;
+  color: #919eab;
+  font-size: 10px;
+}
+
+
+@media screen and (max-width: 1140px) {
+  .services-wrapper {
+    flex-direction: column-reverse;
+    padding: 29px 0 96px 0;
+  }
+
+  .services_list {
+    margin-top: 44px;
+  }
+
+  .services_subtitle,
+  .services_button {
+    text-align: center;
+  }
+
+  .footer_links {
+    margin-top: 72px;
+  }
+  .services_info{
+    width: 100%;
+  }
+}
+
+@media(max-width: 765px){
+  footer h2 {
+    font-size: 28px;
+  }
+}
+@media screen and (max-width: 480px){
+  footer h2{
+    font-size: 20px;
+    letter-spacing: 0.6px;
+  }
+  .services_subtitle{
+    font-size: 12px;
+    letter-spacing: 0.36px;
+  }
+  .footer_button-start{
+    padding: 8px 18px 5px 15px;
+  }
+  .footer_button-white{
+    padding: 8px 18px 6px 15px;
+  }
+  .footer_start .button_start{
+    width: auto;
+    height: auto;
+  }
+  .start-form{
+    height: 163px;
+  }
+}

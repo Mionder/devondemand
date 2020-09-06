@@ -1,0 +1,71 @@
+.portfolio{
+    background-color: #fafafa;
+    padding-top: 201px;
+}
+
+.portfolio_wrapper,
+.portfolio_wrapper_new{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* max-width: 600px; */
+}
+
+.portfolio_title{
+    color: #000000;
+    font-family: "GTWalsheimProBlack";
+    font-size: 40px;
+    text-align: center;
+    letter-spacing: 1.2px;
+}
+
+.portfolio_subtitle{
+    opacity: 0.71;
+    color: #919eab;
+    font-family: "GTWalsheimProMedium";
+    font-size: 20px;
+    letter-spacing: 0.6px;
+    margin: 21px 0px 23px 0px;
+    max-width: 600px;
+    text-align: center;
+}
+
+.work_done{
+    margin-right: 13px;
+}
+
+.portfolio_wrapper{
+    display: none;
+}
+
+@media screen and (max-width: 765px){
+    .portfolio{
+        padding-top: 71px;
+    }
+}
+@media screen and (max-width: 480px){
+    .portfolio_title{
+        font-size: 20px;
+        letter-spacing: 0.6px;
+    }
+    .portfolio_subtitle{
+        font-size: 12px;
+        letter-spacing: 0.36px;
+        margin: 7px 0px 14px 0px;
+    }
+    .MuiButtonBase-root.MuiButton-root.MuiButton-contained.button_start.MuiButton-containedPrimary{
+        padding: 8px 18px 5px 15px;
+        font-size: 9px;
+        letter-spacing: 0.27px;
+    }
+    .portfolio_wrapper_new{
+        display: none;
+    }
+    .portfolio_wrapper{
+        display: flex;
+        padding-bottom: 25px;
+    }
+    .work-section{
+        padding-bottom: 80px;
+    }
+}

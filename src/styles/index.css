@@ -1,0 +1,71 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body { 
+  font-family: 'GTWalsheimPro', sans-serif;
+}
+
+
+li{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+}
+
+.container{
+  max-width: 1250px;
+  width: 100%;
+  margin: auto;
+  padding: 0px 27px;
+}
+
+.image_separator{
+  background: url("../components/About/img/about.png") center no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: auto;
+  max-height: 777px;
+  min-height: 500px;
+}
+
+@media screen and (max-width: 1300px){
+  .container{
+    max-width: unset;
+    width: 90%;
+  }
+}
+@media screen and (max-width: 1024px){
+  .image_separator{
+    min-height: 400px;
+  }
+  .section-start h3{
+    font-size: 32px !important;
+  }
+  .section-start p{
+    font-size: 18px !important;
+  }
+}
+
+@media(max-width: 520px){
+  .section-start h3 {
+    font-size: 20px !important;
+    margin-bottom: 9px !important;
+  }
+  .section-start p {
+    font-size: 12px !important;
+  }
+  .section-start .MuiButton-containedPrimary span {
+    font-size: 10px !important;
+  }
+  .section-start .MuiButton-containedPrimary {
+    border-radius: 3px;
+    margin-top: 9px !important;
+    width: 87px !important;
+    height: 23px !important;
+  }
+}

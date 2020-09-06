@@ -1,0 +1,50 @@
+.success_header-list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 58px;
+}
+
+.success{
+    padding-top: 35px;
+    background-color: #fafafa;
+    min-height: 100vh;
+}
+
+.success_footer{
+    margin: 45px 0px;
+}
+
+.success_footer-list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.success_footer-item:first-child{
+    color: #919eab;
+    font-family: "GTWalsheimProBold";
+    font-size: 20px;
+    letter-spacing: 0.6px;
+    line-height: 53px;
+    text-decoration: underline;
+}
+.success_footer-item{
+    color: #919eab;
+    font-family: "GTWalsheimProBold";
+    font-size: 10px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 670px){
+    .success_footer-list{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .success_footer-item:first-child{
+        margin-bottom: 26px;
+    }
+    .success_footer-item:first-child{
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,92 @@
+.work{
+    background-color: #fafafa;
+    padding: 58px 0px;
+}
+
+.work_wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.work_area{
+    position: relative;
+    height: 408px;
+    border-radius: 40px;
+    background-color: #f6f7fa;
+    width: 721px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    /* height: auto; */
+}
+
+.button_work{
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.14);
+    border-radius: 40px;
+    background-color: #ffffff;
+    color: #000000;
+    font-family: "GTWalsheimProBlack";
+    font-size: 20px;     
+    letter-spacing: 0.6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 24px 124px 24px 108px;
+    position: absolute;
+    bottom: -35px; 
+    /* left: 175px; */ 
+    margin-top: 35px;
+    border: none;
+    cursor: pointer;
+}
+
+.speed_info{
+    color: #919eab;
+    font-family: "GTWalsheimProBold";
+    font-size: 20px;
+    letter-spacing: 0.6px;
+
+}
+
+.speed_test{
+    display: flex;    
+    margin-top: 76px;
+    /* justify-content: center; */
+}
+
+.work_done{
+    color: #919eab;
+}
+
+@media screen and (max-width: 765px){
+    .work_area{
+        width: 100%;
+    }
+    .button_work{
+        margin: auto;
+    }
+    .work .container{
+        width: 100%;
+        padding: 0px;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .work_area{
+        height: 181px;
+    }
+    .speed_test{
+        display: none;
+    }
+    .button_work{
+        padding: 12px;
+        font-size: 9px;
+        letter-spacing: 0.27px;
+        text-align: center;
+        bottom: -17px;
+    }
+    .work{
+        padding: 25px 0px;
+    }
+} 

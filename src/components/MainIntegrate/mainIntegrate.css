@@ -1,0 +1,53 @@
+.integrate{
+    font-family: "GTWalsheimPro"; 
+    padding-top: 195px;
+    background-color: #fafafa;
+    padding-bottom: 200px;
+}
+
+.integrate .section-start{
+    max-width: 700px;
+}
+
+.integrate-tools{
+    width: 100%;
+    text-align: center;
+}
+
+.integrate-tools img{
+    object-fit: cover;
+    width: 90%;
+    margin-top: 18px;
+}
+
+@media(max-width: 1024px){
+    .integrate{
+        padding-top: 150px;
+    }
+}
+
+@media screen and (max-width: 765px){
+    .integrate .section-start {
+        max-width: 400px;
+        margin-bottom: 30px;
+    }
+    .integrate-tools img{
+        width: 100%;
+    }
+    .integrate{
+        padding-bottom: 100px;
+    }
+}
+
+@media screen and (max-width: 520px){
+    .integrate {
+        padding-top: 60px;
+        padding-bottom: 50px;
+    }
+    .integrate .section-start {
+        max-width: 360px;
+    }
+    .integrate-tools img{
+        margin-top: -18px;
+    }
+}

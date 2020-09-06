@@ -1,0 +1,145 @@
+.faqs {
+  padding: 100px 0;
+  letter-spacing: 0.6px;
+  font-size: 20px;   
+  background-color: #fafafa;
+}
+
+.faqs_wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+.faqs_sidebar {
+  margin-top: 193px;
+  margin-right: 205px;
+  position: sticky;
+  top: 45px;
+  align-self: flex-start;
+}
+
+.sidebar_list_item {
+  font-family: "GTWalsheimProMedium";
+  margin-bottom: 21px;
+  white-space: nowrap;
+}
+
+.sidebar_list_item a {
+  opacity: 0.8;
+  color: #919eab;
+  transition: 0.3s;
+}
+
+.sidebar_list_item .active,
+.sidebar_list_item a:hover {
+  opacity: 1;
+  color: #000000;
+  cursor: pointer;
+}
+
+.faqs_title {
+  font-family: "GTWalsheimProBold";
+  font-size: 40px;
+  letter-spacing: 1.2px;
+}
+
+.faqs_subtitle {
+  margin-top: 39px;
+  font-family: "GTWalsheimProMedium";
+  font-size: 20px;
+  color: #919eab;
+  opacity: 0.8;
+}
+
+.faqs_list {
+  margin-top: 81px;
+}
+
+.faqs_list_item {
+  margin-top: 45px;
+}
+
+.accordion_title,
+.list_title {
+  font-family: "GTWalsheimProBold" !important;
+}
+
+.MuiAccordionDetails-root,
+.MuiAccordionSummary-root {
+  padding: 0 !important;
+}
+
+.MuiAccordionSummary-root {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.MuiAccordionDetails-root {
+  font-family: "GTWalsheimProMedium";
+  margin-left: 92px;
+  margin-bottom: 47px;
+  letter-spacing: 0.6px;
+  line-height: 32px;
+  color: #919eab;
+  opacity: 0.8;
+}
+
+.MuiAccordionSummary-content {
+  margin: 45px 0 45px 76px !important;
+}
+
+.MuiPaper-elevation1 {
+  box-shadow: none !important;
+}
+
+.MuiButtonBase-root.MuiIconButton-root.MuiAccordionSummary-expandIcon.MuiIconButton-edgeEnd {
+  color: #4b6fff;
+  font-size: 22px;
+  margin: 0;
+  padding: 0;
+}
+
+.MuiAccordion-root:before {
+  display: none;
+}
+
+.MuiPaper-root.MuiAccordion-root.MuiAccordion-rounded.MuiPaper-elevation1.MuiPaper-rounded {
+  border-bottom: 2px solid rgb(145, 158, 171, 0.2);
+  background-color: #fafafa;
+}
+
+@media screen and (max-width: 1280px) {
+  .faqs_sidebar {
+    display: none;
+  }
+}
+
+@media(max-width: 520px){
+  .faqs_list .list_accordion .MuiAccordionSummary-content {
+    margin: 10px !important;
+  }
+  .MuiAccordionDetails-root{
+    margin-left: 35px;
+  }
+  .faqs_subtitle {
+    margin-top: 21px;
+    line-height: 20px;
+    font-size: 12px;
+  }
+  .faqs {
+    padding: 50px 0;
+  }
+  .faqs_list {
+    margin-top: 40px;
+  }
+  .faqs_title{
+    font-size: 20px;
+  }
+  .list_title{
+    font-size: 12px;
+  }
+  .list_accordion .makeStyles-heading-2,
+  .list_accordion .MuiTypography-body1{
+    font-size: 10px;
+  }
+}

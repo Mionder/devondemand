@@ -1,0 +1,459 @@
+.development {
+    font-family: "GTWalsheimPro"; 
+    padding-top: 56px;
+    background-color: #fafafa;
+}
+
+.development-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.development-info {
+    width: 45%;
+    padding-top: 263px;
+
+}
+
+.development-info h2{
+    color: #000000;
+    font-size: 40px;
+    font-weight: 900;
+    letter-spacing: 1.2px;
+    max-width: 490px;
+    margin-bottom: 40px;
+}
+
+.development-info p{
+    opacity: 0.8;
+    color: #919eab;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 0.6px;
+}
+
+.development-info ul{
+    margin: 40px 0px 222px;
+}
+
+.development-info li{
+    color: #919eab;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 0.6px;
+    margin-bottom: 20px;
+    display: flex;
+}
+
+.development-info li img{
+    margin-right: 24px;
+}
+
+.form_dev{
+    border-radius: 10px;
+    background-color: #e0eaf5;
+    padding: 33px 47px 47px;
+}
+
+.development-form h5{
+    color: #000000;
+    font-size: 40px;
+    font-weight: 900;
+    letter-spacing: 1.2px;
+    margin-bottom: 11px;
+    padding-right: 20px;
+}
+
+.development-form .from-section__text{
+    color: #000000;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.2px;
+    line-height: 21px;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.development-form input{
+    border-radius: 8px;
+    background-color: #ffffff;
+    padding: 19px 22px;
+    border: none;
+    width: 100%;
+    margin-bottom: 32px;
+    outline: none;
+}
+
+.development-form input::placeholder,
+.development-form input:-ms-input-placeholder,
+.development-form input::-ms-input-placeholder {
+    color: #d9d9d9;
+}
+
+.form-tabs {
+    margin: 20px 0px 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-tabs button{
+    width: 204px;
+    height: 55px;
+    border-radius: 8px;
+    background-color: #ffffff;
+    border: none;
+    color: #7f7f7f;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.22px;
+    line-height: 20px;
+    cursor: pointer;
+    outline: none;
+}
+
+.form-tabs .form-tabs__active {
+    color: #2a62ff;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.22px;
+    line-height: 18px;
+    border: 2px solid #2a62ff;
+}
+
+.from-section{
+    padding: 0px 15px;
+}
+
+.form-tabs button:hover{
+    box-shadow: 0px 3px 1px -2px rgba(0,0,0,0.2), 0px 2px 2px 0px rgba(0,0,0,0.14), 0px 1px 5px 0px rgba(0,0,0,0.12);
+    transition: 0.3s;
+}
+
+.development-form .MuiButton-contained{
+    width: 100%;
+    text-transform: uppercase;
+    color: #000000;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.22px;
+    height: 53px;
+    border-radius: 8px;
+    box-shadow: unset;
+    background-color: #b3bbc4;
+}
+
+.development-footer{
+    text-align: center;
+    max-width: 320px;
+    margin: 10px auto;
+}
+
+.development-footer a{
+    color: #909090;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    text-decoration: underline;
+}
+
+.development-footer a:hover{
+    color: #686565;
+    transition: 0.3s;
+}
+
+.development-info .MuiAlert-standardSuccess{
+    max-width: 372px;
+    background-color: #fff;
+    border: 2px solid #dde5ec;
+}
+.development-info .MuiAlert-standardSuccess a{
+    color: #6987ff;
+}
+
+.development-info .MuiAlert-standardSuccess a:hover{
+    color: #5670db;
+    transition: 0.3s;
+}
+
+.development-info .MuiAlert-standardSuccess .MuiAlert-icon{
+    display: none;
+}
+
+.development-info  .MuiAlert-root {
+    padding: 5px 22px;
+    font-size: 12px;
+}
+
+.previous-step{
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.2px;
+    line-height: 20px;
+    text-decoration: underline;
+    color: #000;
+    margin-left: 20px;
+}
+.previous-step:hover{
+    color: #2a62ff;
+    transition: 0.3s;
+}
+
+.development-form__header{
+    display: flex;
+    justify-content: space-between;
+    margin: 33px 20px 20px;
+}
+
+.development-form__header p{
+    color: #000000;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.2px;
+    line-height: 21px;
+}
+
+.second-form .MuiCheckbox-colorSecondary.Mui-checked {
+    color: #4b6fff;
+}
+
+.form-check{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 22px;
+    margin-left: 10px;
+}
+
+.second-form .MuiButton-contained{
+    margin: 15px 15px 0px;
+}
+
+.form-check a{
+    color: #6772e5;
+    width: 42px;
+    height: 44px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+    background-color: #ffffff;
+    border-radius: 50%;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    padding: 2px 4px;
+    font-family: 'GTWalsheimProBold';
+}
+.form-check__choose{
+    display: flex;
+    align-items: center;
+}
+.form-check__choose p{
+    margin-right: 20px;
+}
+
+.third-form .MuiDropzoneArea-textContainer {
+    text-align: center;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    margin-top: 50px;
+    padding: 115px 0px 90px;
+}
+
+.third-form .MuiTypography-h5{
+    font-family: 'GTWalsheimProBold';
+    color: #2a62ff;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.22px;
+    line-height: 18px;
+}
+
+.third-form .MuiDropzoneArea-root{
+    border: 3px dashed #2a62ff;
+    border-radius: 8px;
+    outline: none;
+    position: relative;
+    margin-top: 100px;
+    margin-bottom: 120px;
+}
+
+.third-form .MuiDropzoneArea-icon {
+    color: rgb(42 98 255);
+    margin-bottom: 10px;
+}
+
+.third-form .form-dropfox{
+    margin-top: 100px;
+}
+
+.third-form .MuiDropzoneArea-root::before{
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 90px;
+    width: 80px;
+    height: 66px;
+    transform: translate(-50%, 100%);
+    background: url(./img/folder.svg) no-repeat;
+    background-size: cover;
+}
+
+.third-form .MuiDropzoneSnackbar-successAlert{
+    background-color: #4b6fff;
+}
+
+/* SECOND FORM - CHECKED CHECKBOX  */
+.development-form .MuiButton-contained.checked{
+    background-color: #4b6fff;
+    color: #fff;
+}
+
+@media(max-width: 1300px){
+    .form-tabs button {
+        width: 47%;
+    }
+}
+
+@media screen and (max-width: 1024px){
+    .development-wrapper{
+        flex-direction: column;
+    }
+    .development-info{
+        width: 100%;
+        padding-top: 0px;
+    }
+    .development-info ul{
+        margin-bottom: 40px;
+    }
+    .development-info p{
+        font-size: 18px;
+    }
+    .development-form h5,
+    .development-info h2{
+        font-size: 32px;
+    }
+    .development-form__header p,
+    .form-check__choose p,
+    .form-check__choose span,
+    .previous-step{
+        font-size: 10px;
+        line-height: 14px;
+    }
+    .form-check{
+        margin: 0px 0px 10px;
+    }
+    .form-check a{
+        font-size: 8px;
+        padding: 1px 5px;
+        width: 32px;
+        height: 32px;
+    }
+    .form-check__choose p{
+        margin-right: 10px;
+    }
+    .form-check .MuiSvgIcon-root{
+        font-size: 18px;
+    }
+    .form-check .PrivateSwitchBase-root-1{
+        padding-left: 0px;
+    }
+    .development-form__header{
+        margin: 10px 0px 20px;
+    }
+    .previous-step{
+        margin: 0px;
+    }
+    .second-form .MuiButton-contained{
+        margin: 15px 0px;
+    }
+}
+
+@media screen and (max-width: 520px){
+    .third-form .MuiDropzoneArea-root{
+        margin: 30px 0px;
+    }
+    .form_dev{
+        padding: 13px 25px 18px;
+    }
+    .third-form .MuiDropzoneArea-textContainer{
+        padding: 30px 0px 50px;
+        margin-top: 20px;
+    }
+    .third-form .MuiDropzoneArea-root::before{
+        top: 0px; 
+        width: 62px;
+        height: 51px;
+    }
+    .third-form .MuiDropzoneArea-text {
+        margin-top: 15px;
+        margin-bottom: 0px;
+    }
+    .third-form .MuiTypography-h5{
+        font-size: 10px;
+    }
+    .development-form h5, .development-info h2 {
+        font-size: 22px;
+    }
+    .development-info h2{
+        font-size: 20px;
+        letter-spacing: 0.6px;
+        margin-bottom: 28px;
+    }
+    .development{
+        padding-top: 25px;
+    }
+    .development-info p {
+        font-size: 12px;
+    }
+    .development-info li{
+        font-size: 12px;
+    }
+    .development-info li img{
+        width: 10px;
+    }
+    .development-info ul {
+        margin: 26px 0px 0px;
+    }
+    .development-info .MuiAlert-root{
+        display: none;
+    }
+    .development-form .from-section__text{
+        font-size: 10px;
+        margin-bottom: 10px;
+    }
+    .from-section {
+        padding: 0px 5px;
+    }
+    .form-tabs button,
+    .form-tabs .form-tabs__active{
+        font-size: 10px;
+        height: 27px;
+        border-radius: 4px;
+    }
+    .development-form input {
+        border-radius: 4px;
+        padding: 8px 22px;
+        margin-bottom: 13px;
+        font-size: 10px;
+    }
+    .form-tabs {
+        margin: 1px 0px 10px;
+    }
+    .development-form .MuiButton-contained {
+        font-size: 10px;
+        height: 32px;
+        margin-top: 10px;
+    }
+    .development-footer{
+        margin: 0px auto;
+    }
+    .development-footer a{
+        font-size: 8px;
+        line-height: 0px;
+    }
+    .development-form__header{
+        margin: 10px 0px 20px;
+    }
+    .previous-step{
+        margin: 0px;
+    }
+}

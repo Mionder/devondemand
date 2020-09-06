@@ -1,0 +1,151 @@
+.pricing {
+    font-family: "GTWalsheimPro"; 
+    padding-top: 150px;
+    background-color: #fafafa;
+}
+
+.pricing-wrapper {
+    color: #000000;
+    text-align: center;
+}
+
+.pricing-wrapper h4{
+    font-size: 40px;
+    font-weight: 900;
+    letter-spacing: 1.2px;
+    margin-bottom: 76px;
+}
+
+.pricing-wrapper h5{
+    font-size: 30px;
+    font-weight: 900;
+    letter-spacing: 0.9px;
+}
+
+.pricing-section {
+  margin-top: 70px;
+}
+
+.pricing-section__price {
+    font-family: 'GTWalsheimProBold';
+    font-size: 140px;
+    font-weight: 900;
+    letter-spacing: 4.2px;
+}
+
+.pricing-section__list{
+    display: flex;
+    justify-content: space-between;
+    margin: 36px auto;
+    max-width: 540px;
+}
+
+.pricing-section__list li {
+    color: #919eab;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 0.6px;
+    display: flex;
+}
+
+.pricing-section__list li img{
+    margin-right: 10px;
+}
+
+.pricing-section__desc {
+    opacity: 0.8;
+    color: #919eab;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 0.6px;
+    margin: 0 auto 32px;
+    max-width: 500px;
+}
+.pricing-section__footer {
+    font-size: 30px;
+    font-weight: 900;
+    letter-spacing: 0.9px
+}
+.pricing-section__footer a{
+    text-decoration: underline;
+    color: #4b6fff;
+    transition: 0.3s;
+}
+
+.pricing-section__footer a:hover{
+    color: #93a8fc;
+    transition: 0.3s;
+}
+
+@media(max-width: 1024px){
+  .pricing-wrapper h4{
+        font-size: 32px;
+        margin-bottom: 40px;
+    }
+    .pricing-wrapper h5,
+    .pricing-section__footer {
+        font-size: 24px;
+    }
+    .pricing-section__price{
+        font-size: 100px;
+    }
+}
+
+@media(max-width: 765px){
+    .pricing{
+        padding-top: 90px;
+    }
+    .pricing-section__price {
+        font-size: 75px;
+    }
+    .pricing-section__list li{
+        font-size: 16px;
+    }
+    .pricing-section__list{
+        max-width: 420px;
+    }
+    .pricing-section__list li img{
+        max-width: 25px;
+    }
+    .pricing-section__desc{
+        font-size: 16px;
+    }
+    .pricing-section {
+        margin-top: 30px;
+    }
+    .pricing-wrapper h5, .pricing-section__footer {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 520px){
+    .pricing {
+        padding-top: 76px;
+    }
+    .pricing-wrapper h4 {
+        font-size: 20px;
+        margin-bottom: 12px;
+    }
+    .pricing-wrapper h5, .pricing-section__footer {
+        font-size: 12px;
+    }
+    .pricing-section {
+        margin-top: 17px;
+    }
+    .pricing-section__price {
+        font-size: 60px;
+    }
+    .pricing-section__list li {
+        font-size: 12px;
+    }
+    .pricing-section__list li img {
+        max-width: 16px;
+    }
+    .pricing-section__list{
+        margin: 13px auto;
+    }
+    .pricing-section__desc {
+        font-size: 11px;
+        margin-bottom: 20px;
+    }
+}
