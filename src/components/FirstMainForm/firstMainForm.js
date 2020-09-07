@@ -49,7 +49,16 @@ export default class FirstMainForm extends Component{
     }
 
     handleChangeSelect = (event) => {    
-        this.setState({selectValue: event.target.value});  
+        this.setState({selectValue: event.target.value});
+        console.log(this.state.selectValue);
+        switch (this.state.selectValue){
+            case "R": this.setState({isFrontOnly: false}); break;
+            case "Ra": this.setState({isFrontOnly: true}); break;  
+            case "RN": this.setState({isFrontOnly: false}); break;  
+            case "RNa": this.setState({isFrontOnly: true}); break;  
+
+        }
+        // this.setState({isFrontOnly: false});  
     }
 
 
@@ -89,6 +98,13 @@ export default class FirstMainForm extends Component{
             this.setState({isShowFirst: "second"})
     }
 
+    setValue = () => {
+        console.log(this.state.isFrontOnly);
+        this.setState({isFrontOnly: false})
+        console.log(this.state.isFrontOnly);
+
+    }
+
     render(){
         const {isFrontOnly,isShowFirst,numberPages, buttonColor,getStarted, continueLabel, emailValue, fileValue, throwError, selectValue} = this.state;
 
@@ -111,10 +127,10 @@ export default class FirstMainForm extends Component{
                                         id: 'age-native-required',
                                     }}
                                     >
-                                    <option onClick={() => this.setState({isFrontOnly: true})} value={"R"}>React Only</option>
-                                    <option onClick={() => this.setState({isFrontOnly: false})} value={"Ra"}>React + Api</option>
-                                    <option onClick={() => this.setState({isFrontOnly: true})} value={"RN"}>React Native (Mobily) Only</option>
-                                    <option onClick={() => this.setState({isFrontOnly: false})} value={"RNa"}>React Native (Mobily) + Api</option>
+                                    <option  value={"R"}>React Only</option>
+                                    <option  value={"Ra"}>React + Api</option>
+                                    <option value={"RN"}>React Native (Mobily) Only</option>
+                                    <option  value={"RNa"}>React Native (Mobily) + Api</option>
                                     </Select>
                                 </FormControl>
                             </div>                          
