@@ -91,6 +91,9 @@ input[type='number'] {
     position: relative;
     overflow: hidden;
 }
+#uploadFile{
+    height: 27.5px;
+}
 .fileUpload input.upload {
     position: absolute;
     top: 0;
@@ -161,9 +164,14 @@ input[type='number'] {
         top: 6px;
         left: 35px;
     }
+    
     .fileUpload span{
         display: none;
-    } 
+    }
+    #age-native-required{
+        padding: 8px 22px !important;
+        font-size: 12px;
+    }
 }
 
 @media screen and (max-width: 584px){
@@ -189,11 +197,18 @@ input[type='number'] {
         margin-top: 0px;
     } 
     #uploadFile{
-        padding: 19px 22px;
+        padding: 8px 22px !important;
         top: 0px
     }
     .btn--browse{
-        top: 5px;
+        top: -3px;
+        right: 0px;
+    }
+    .MuiButton-label{
+        font-size: 8px !important;
+        font-weight: 700;
+        letter-spacing: 0.11px;
+        line-height: 11px;
     }
 }
 
@@ -201,7 +216,7 @@ input[type='number'] {
     .btn--browse{
         width: 50px;
         height: 20px;
-        top: 30px;
+        top: 20px;
     }
     .bi-cloud-arrow-up{
         top: 0px;
