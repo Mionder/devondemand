@@ -448,6 +448,8 @@
     }
     .development-footer{
         margin: 0px auto;
+        bottom: auto;
+        left: auto;
     }
     .development-footer a{
         font-size: 8px;

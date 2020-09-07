@@ -35,9 +35,9 @@ const Footer = () => {
                   smooth={true}
                   offset={-70}
                   duration= {650}
-                  ><Button className="button_start footer_button-start" variant="contained" color="primary">
+                  ><Linking to="/"><Button className="button_start footer_button-start" variant="contained" color="primary">
                   Start now
-                </Button></Link>
+                </Button></Linking></Link>
               </div>
             </div>
           </div>
@@ -58,9 +58,9 @@ const Footer = () => {
                   smooth={true}
                   offset={-70}
                   duration= {700}
-                  ><Button className="button_start footer_button-white" variant="contained" color="primary">
+                  ><Linking to="/"><Button className="button_start footer_button-white" variant="contained" color="primary">
                   Start now
-                </Button></Link>
+                </Button></Linking></Link>
               </div>
             </div>
           </div>

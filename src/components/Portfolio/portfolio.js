@@ -2,6 +2,7 @@ import React from "react";
 import "./portfolio.css";
 import Button from '@material-ui/core/Button';
 import Work from "../Work/work.js";
+import { Link } from 'gatsby';
 
 const Portfolio = () => {
     return(
@@ -11,9 +12,9 @@ const Portfolio = () => {
                     <h4 className="portfolio_title">This is our working process.</h4>
                     <p className="portfolio_subtitle">Attract talent with beautiful job posts and manage candidates 
 in an easy-to-use and powerful tool.</p>
-                    <Button className="button_start" variant="contained" color="primary">
+                    <Link to="/"><Button className="button_start" variant="contained" color="primary">
                         Start now
-                    </Button>
+                    </Button></Link>
                 </div>
                 <div className="work-section">
                     <Work />

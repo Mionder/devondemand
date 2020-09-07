@@ -2,6 +2,7 @@ import React from "react";
 import "./work.css";
 import DoneIcon from '@material-ui/icons/Done';
 import "../Portfolio/portfolio.css";
+import { Link } from 'gatsby';
 import Button from '@material-ui/core/Button';
 const Work = () => {
     return(
@@ -10,9 +11,9 @@ const Work = () => {
                 <div className="portfolio_wrapper">
                         <h4 className="portfolio_title">This is our working process.</h4>
                         <p className="portfolio_subtitle">Attract talent with beautiful job posts and manage candidates in an easy-to-use and powerful tool.</p>
-                        <Button className="button_start" variant="contained" color="primary">
+                        <Link to="/"><Button className="button_start" variant="contained" color="primary">
                             Start now
-                        </Button>
+                        </Button></Link>
                     </div>
                 <div className="work_wrapper">
                     <div className="work_area">
