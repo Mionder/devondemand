@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Layout from '../components/Layout/layout.js';
 import Accordion from '../components/Accordion/accordion.js';
-import { Link, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
+import { Link, Element, Events, animateScroll as scroll, scroller } from 'react-scroll'
 
 import database from '../database/database.json';
 
@@ -104,7 +104,7 @@ export default class FAQs extends Component {
               </div>
               <div className="faqs_main">
                 <h2 className="faqs_title">Questions? Look here.</h2>
-                <p className="faqs_subtitle">Can’t find an answer? Email devondemandco@gmail.com</p>
+                <a href="mailto:devondemandco@gmail.com" className="faqs_subtitle">Can’t find an answer? Email devondemandco@gmail.com</a>
                 <div className="faqs_list">
                   {this.renderQuestions()}
                 </div>

@@ -11,6 +11,57 @@
 .n{
     color: green;
 }
+.bi-cloud-arrow-up{
+    display: none;
+}
+.MuiDropzoneArea-root{
+    background-color: #f2f5ff !important;
+    margin: 100px auto 120px auto;
+    width: 85% !important;
+}
+.third-form{
+    border-radius: 10px;
+    background-color: #deeaf6;
+    padding: 32px 48px;
+    position: relative;
+}
+.first-form,
+.second-form{
+    position: relative;
+}
+
+.third_form-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90px;
+}
+
+
+.closing_form{
+    font-size: 18px;
+    line-height: 120%;
+    cursor: pointer;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+input[type='number'] {
+    -moz-appearance: textfield;
+}
+
+.dispn{
+    background-color: #b3bbc4 !important;
+    color: #000000 !important;
+}
+
+.disp{
+    background-color: #4b6fff !important; 
+    color: #ffffff !important;
+}
 
 /* .form-upload .MuiButton-containedPrimary{
     color: #fff;
@@ -67,7 +118,7 @@
     text-transform: uppercase;
     font-family: 'GTWalsheimProBold';
     cursor: pointer;
-    z-index: 9;
+
 }
 
 .form-upload__helper input{
@@ -103,8 +154,60 @@
     }
 }
 
+@media screen and (max-width: 654px){
+    .bi-cloud-arrow-up{
+        display: block;
+        position: absolute;
+        top: 6px;
+        left: 35px;
+    }
+    .fileUpload span{
+        display: none;
+    } 
+}
+
+@media screen and (max-width: 584px){
+    #uploadFile{
+        top: 27px;
+    }
+    .btn--browse{
+        width: 70px;
+        height: 30px;
+        top: 40px;
+        /* position: relative; */
+    }
+    .bi-cloud-arrow-up {
+        top: 2px;
+        left: 23px;
+    }
+}
+
+
+
 @media screen and (max-width: 520px){
     .wrapper_full_form{
         margin-top: 0px;
     } 
+    #uploadFile{
+        padding: 19px 22px;
+        top: 0px
+    }
+    .btn--browse{
+        top: 5px;
+    }
+}
+
+@media screen and (max-width: 414px){
+    .btn--browse{
+        width: 50px;
+        height: 20px;
+        top: 30px;
+    }
+    .bi-cloud-arrow-up{
+        top: 0px;
+        left: 13px;
+    }
+    #uploadFile{
+        top: 21px;
+    }
 }

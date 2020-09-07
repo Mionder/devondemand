@@ -189,10 +189,11 @@
         margin-top: 13px;
     }
     .MuiButtonBase-root.MuiButton-root.MuiButton-contained.button_start.MuiButton-containedPrimary{
-        max-width: 175px;
-        font-size: 12px;
+        min-width: 175px;
         letter-spacing: 0.36px;
         padding: 10px 15px 9px 15px;
+        min-height: 57px;
+        font-size: 20px;
     }
     .success_header-item img{
         width: 85px;
@@ -212,7 +213,7 @@
         font-family: "GTWalsheimPro";
     }
     .MuiButton-label{
-        font-size: 10px;
+        font-size: 20px;
     }
     .MuiButtonBase-root.MuiButton-root.MuiButton-contained.button_form.MuiButton-containedPrimary {
         min-height: 30px;

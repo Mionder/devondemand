@@ -1,8 +1,8 @@
 import React from 'react';
-import { Link } from 'gatsby';
+import { Link as Linking } from 'gatsby';
 import Button from '@material-ui/core/Button';
 import Logo from "../Header/img/devondemand.png";
-
+import { Link } from 'react-scroll';
 import InstagramIcon from '@material-ui/icons/Instagram';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import TwitterIcon from '@material-ui/icons/Twitter';
@@ -28,9 +28,16 @@ const Footer = () => {
                 From boring content campaign to unexpected one, there is us. Break your email vision & give your content something your subscribers have never seen before.
               </div>
               <div className="services_button">
-                <Button className="button_start footer_button-start" variant="contained" color="primary">
+                <Link
+                  activeClass=""
+                  to="wrapper_full_form"
+                  spy={true}
+                  smooth={true}
+                  offset={-70}
+                  duration= {650}
+                  ><Button className="button_start footer_button-start" variant="contained" color="primary">
                   Start now
-                </Button>
+                </Button></Link>
               </div>
             </div>
           </div>
@@ -44,9 +51,16 @@ const Footer = () => {
                 Try dev on demand today!
               </h2>
               <div className="start_button">
-                <Button className="button_start footer_button-white" variant="contained" color="primary">
+              <Link
+                  activeClass=""
+                  to="wrapper_full_form"
+                  spy={true}
+                  smooth={true}
+                  offset={-70}
+                  duration= {700}
+                  ><Button className="button_start footer_button-white" variant="contained" color="primary">
                   Start now
-                </Button>
+                </Button></Link>
               </div>
             </div>
           </div>
@@ -56,11 +70,11 @@ const Footer = () => {
         <div className="container">
           <div className="links-wrapper">
             <div className="footer_logo">
-              <Link to="/"><img src={Logo} alt="logo"/></Link>
+              <Linking to="/"><img src={Logo} alt="logo"/></Linking>
             </div>
             <div className="footer_docs">
-              <a href="#" className="footer_docs_item">Terms of service</a>
-              <a href="#" className="footer_docs_item">Privacy policy</a>
+              <Linking to="/terms-of-service" className="footer_docs_item">Terms of service</Linking>
+              <Linking to="/privacy-policy" className="footer_docs_item">Privacy policy</Linking>
             </div>
             <div className="footer_social">
               <ul className="social_list">

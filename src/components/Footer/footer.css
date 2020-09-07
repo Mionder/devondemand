@@ -172,6 +172,9 @@ footer h2 {
   .services_info{
     width: 100%;
   }
+  .services_list_item{
+    text-align: left;
+  }
 }
 
 @media(max-width: 765px){

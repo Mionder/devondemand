@@ -1,0 +1,28 @@
+#age-native-required{
+    border-radius: 8px;
+    background-color: #ffffff;
+    padding: 19px 22px;
+    border: none;
+    width: 100%;
+    outline: none;
+}
+
+.MuiInput-underline::before {
+    content: none !important;
+}
+
+.selecter{
+    width: 100%;
+}
+
+.makeStyles-formControl-5{
+    width: 100%;
+}
+
+.MuiInput-underline::after{
+    content: none !important;
+}
+
+.MuiFormControl-root{
+    width: 100%;
+}

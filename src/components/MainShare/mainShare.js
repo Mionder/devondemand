@@ -5,6 +5,7 @@ import Card from '@material-ui/core/Card';
 import adobe from "./img/adobe.svg";
 import figma from "./img/figma.svg";
 import sketch from "./img/sketch.svg";
+import { Link } from 'react-scroll'
 
 const MainShare = () => {
   return (
@@ -14,7 +15,14 @@ const MainShare = () => {
             <div className="section-start center">
                 <h3>We developed extensions, so you can share your design easily </h3>
                 <p>Attract talent with beautiful job posts and manage candidates in an easy-to-use and powerful tool.</p>
-                <Button variant="contained" color="primary" href="#contained-buttons">Start now</Button>
+                <Link
+                    activeClass=""
+                    to="wrapper_full_form"
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration= {500}
+                    ><Button variant="contained" color="primary" >Start now</Button></Link>
               </div>
               <div className="share-items">
                    <a className="share-item" href="#">
