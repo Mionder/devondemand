@@ -23,7 +23,35 @@ export default class FirstMainForm extends Component{
         fileValue: "",
         throwError: false,
         throwModal: false,
-        selectValue: "R"
+        selectValue: "R",
+        isCheckedItem: false,
+        formSecondValid: false,
+        checkBoxes: [
+            {
+                id: "1",
+                checked: false
+            },
+            {
+                id: "2",
+                checked: false
+            },
+            {
+                id: "3",
+                checked: false
+            },
+            {
+                id: "4",
+                checked: false
+            },
+            {
+                id: "5",
+                checked: false
+            },
+            {
+                id: "6",
+                checked: false
+            },
+        ]
     }
 
     componentDidMount(){
@@ -92,10 +120,14 @@ export default class FirstMainForm extends Component{
             this.setState({throwError: true});
         }
         else this.setState({throwError: false});
-            
+        setTimeout(window.location.reload(),1000);
+        
     }
     checkSecond = async() => {
-        await this.checkError();
+        if (this.state.buttonColor === true){
+            this.setState({throwError: true});
+        }
+        else this.setState({throwError: false});
         if(this.state.throwError === false)
             this.setState({isShowFirst: "second"})
     }
@@ -107,8 +139,38 @@ export default class FirstMainForm extends Component{
 
     }
 
+    setCheckboxes = async(_id) => {
+        const {checkBoxes} = this.state;
+        var key = 0; 
+            for(let i=0; i<checkBoxes.length; i++){
+                if(checkBoxes[i].id == _id){
+                    checkBoxes[i].checked = !checkBoxes[i].checked;
+                }
+                if(checkBoxes[i].checked === true){
+                   await this.setState({isCheckedItem: true})
+                }
+            }
+
+            for(let i=0; i<checkBoxes.length; i++){
+                if(checkBoxes[i].checked == true)
+                    key=checkBoxes[i].id;
+            }
+            if(key == 0){
+                await  this.setState({isCheckedItem: false})
+            }   
+    }
+
+    errorCheck = () => {
+        if(this.state.isCheckedItem === true){
+            this.setState({formSecondValid: true})
+            setTimeout(window.location.reload(),1000);
+
+        }
+    }
+
+
     render(){
-        const {isFrontOnly,isShowFirst,numberPages, buttonColor,getStarted, continueLabel, emailValue, fileValue, throwError, selectValue} = this.state;
+        const {isFrontOnly,isShowFirst,numberPages, buttonColor,getStarted,formSecondValid, continueLabel,isCheckedItem, emailValue, fileValue, throwError, selectValue} = this.state;
 
     return(
         <div className="wrapper_full_form">
@@ -184,7 +246,7 @@ export default class FirstMainForm extends Component{
                      </div>
                      <div className="form-check">
                          <div className="form-check__choose">
-                             <Checkbox icon={<CircleUnchecked />} checkedIcon={<CircleCheckedFilled />}/>
+                             <Checkbox icon={<CircleUnchecked />} onClick={()=>this.setCheckboxes(1)} checkedIcon={<CircleCheckedFilled />}/>
                              <p>Connect Stripe</p>
                              <span>+2 business days</span>
                          </div>
@@ -192,7 +254,7 @@ export default class FirstMainForm extends Component{
                      </div>
                      <div className="form-check">
                          <div className="form-check__choose">
-                             <Checkbox icon={<CircleUnchecked />}  checkedIcon={<CircleCheckedFilled />}/>
+                             <Checkbox icon={<CircleUnchecked />} onClick={()=>this.setCheckboxes(2)} checkedIcon={<CircleCheckedFilled />}/>
                              <p>Connect Stripe</p>
                              <span>+2 business days</span>
                          </div>
@@ -200,7 +262,7 @@ export default class FirstMainForm extends Component{
                      </div>
                      <div className="form-check">
                          <div className="form-check__choose">
-                             <Checkbox icon={<CircleUnchecked />} checkedIcon={<CircleCheckedFilled />}/>
+                             <Checkbox icon={<CircleUnchecked />} onClick={()=>this.setCheckboxes(3)} checkedIcon={<CircleCheckedFilled />}/>
                              <p>Connect Stripe</p>
                              <span>+2 business days</span>
                          </div>
@@ -208,7 +270,7 @@ export default class FirstMainForm extends Component{
                      </div>
                      <div className="form-check">
                          <div className="form-check__choose">
-                             <Checkbox icon={<CircleUnchecked />}  checkedIcon={<CircleCheckedFilled />}/>
+                             <Checkbox icon={<CircleUnchecked />} onClick={()=>this.setCheckboxes(4)}  checkedIcon={<CircleCheckedFilled />}/>
                              <p>Connect Stripe</p>
                              <span>+2 business days</span>
                          </div>
@@ -216,7 +278,7 @@ export default class FirstMainForm extends Component{
                      </div>
                      <div className="form-check">
                          <div className="form-check__choose">
-                             <Checkbox icon={<CircleUnchecked />} checkedIcon={<CircleCheckedFilled />}/>
+                             <Checkbox icon={<CircleUnchecked />} onClick={()=>this.setCheckboxes(5)} checkedIcon={<CircleCheckedFilled />}/>
                              <p>Connect Stripe</p>
                              <span>+2 business days</span>
                          </div>
@@ -224,13 +286,15 @@ export default class FirstMainForm extends Component{
                      </div>
                      <div className="form-check">
                          <div className="form-check__choose">
-                             <Checkbox icon={<CircleUnchecked />} checkedIcon={<CircleCheckedFilled />}/>
+                             <Checkbox icon={<CircleUnchecked />} onClick={()=>this.setCheckboxes(6)} checkedIcon={<CircleCheckedFilled />}/>
                              <p>Connect Stripe</p>
                              <span>+2 business days</span>
                          </div>
                          <a href="#">stripe</a>
                      </div>
-                     <Button className={buttonColor ? "active" : "not_active"} variant="contained">get started</Button>
+                     <Button onClick={this.errorCheck} className={!isCheckedItem ? "dispn" : "disp"} variant="contained">get started</Button>
+                     {formSecondValid && <Alert className="alert_block" type="success" message="sending..." />}
+
                      </div>
                  </form>
                  <div className="development-footer">
