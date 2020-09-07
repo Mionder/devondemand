@@ -20,7 +20,7 @@ export default class FirstMainForm extends Component{
         getStarted: "get started",
         continueLabel: "continue",
         emailValue: "",
-        fileValue: "",
+        fileValue: "https://www.figma.com/yourdesign",
         throwError: false,
         throwModal: false,
         selectValue: "R"
@@ -50,7 +50,6 @@ export default class FirstMainForm extends Component{
 
     handleChangeSelect = (event) => {    
         this.setState({selectValue: event.target.value});  
-        console.log(this.state.selectValue);
     }
 
 
@@ -122,7 +121,7 @@ export default class FirstMainForm extends Component{
                         </div>
                         <div className="form-upload">
                             <span className="from-section__text">Link to your design (you can also drag and drop a file)</span>
-                            <input onDragOver={() => this.setState({isShowFirst: "third"})} name="link" type="text" placeholder="https://www.figma.com/yourdesign" />
+                            <input onDragOver={() => this.setState({isShowFirst: "third"})} name="link" type="text" onChange={this.handleChangeFile} value={fileValue} placeholder="https://www.figma.com/yourdesign" />
                            <div className="form-next">
                                 <div className="form-upload__helper">
                                     <input  onDragOver={() => this.setState({isShowFirst: "third"})} onChange={this.handleChangeFile} value={fileValue}  id="uploadFile" className="f-input" placeholder="https://www.figma.com/yourdesign" />

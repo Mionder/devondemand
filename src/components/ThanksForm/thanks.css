@@ -212,7 +212,7 @@
     .form_title{
         font-family: "GTWalsheimPro";
     }
-    .MuiButton-label{
+    .MuiButtonBase-root.MuiButton-root.MuiButton-contained.button_start.MuiButton-containedPrimary{
         font-size: 20px;
     }
     .MuiButtonBase-root.MuiButton-root.MuiButton-contained.button_form.MuiButton-containedPrimary {

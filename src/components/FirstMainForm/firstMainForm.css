@@ -188,6 +188,12 @@ input[type='number'] {
         top: 2px;
         left: 23px;
     }
+    .third-form {
+        border-radius: 10px;
+        background-color: #deeaf6;
+        padding: 16px 24px;
+        position: relative;
+    }
 }
 
 
@@ -205,10 +211,13 @@ input[type='number'] {
         right: 0px;
     }
     .MuiButton-label{
-        font-size: 8px !important;
+        /* font-size: 8px !important; */
         font-weight: 700;
         letter-spacing: 0.11px;
         line-height: 11px;
+    }
+    .MuiDropzoneArea-root{
+        width: 100% !important;
     }
 }
 
@@ -225,4 +234,11 @@ input[type='number'] {
     #uploadFile{
         top: 21px;
     }
+    third-form {
+        border-radius: 10px;
+        background-color: #deeaf6;
+        padding: 8px 12px;
+        position: relative;
+    }
+    
 }
