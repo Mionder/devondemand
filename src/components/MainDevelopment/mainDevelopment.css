@@ -18,10 +18,10 @@
 .development-info h2{
     color: #000000;
     font-size: 40px;
-    font-weight: 900;
     letter-spacing: 1.2px;
     max-width: 490px;
     margin-bottom: 40px;
+    font-family: "GTWalsheimProBold";
 }
 
 .development-info p{
@@ -39,10 +39,10 @@
 .development-info li{
     color: #919eab;
     font-size: 20px;
-    font-weight: 700;
     letter-spacing: 0.6px;
     margin-bottom: 20px;
     display: flex;
+    font-family: "GTWalsheimProBold";
 }
 
 .development-info li img{
@@ -58,10 +58,10 @@
 .development-form h5{
     color: #000000;
     font-size: 40px;
-    font-weight: 900;
     letter-spacing: 1.2px;
     margin-bottom: 11px;
     padding-right: 20px;
+    font-family: "GTWalsheimProBold";
 }
 
 .development-form .from-section__text{

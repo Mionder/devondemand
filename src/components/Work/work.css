@@ -40,6 +40,9 @@
     border: none;
     cursor: pointer;
 }
+.button_work:hover{
+    background-color: #f7f7f7;
+}
 
 .speed_info{
     color: #919eab;

@@ -179,7 +179,7 @@ export default class FirstMainForm extends Component{
                 <div className="form_dev">
                         <h5>Let’s bring your design to life</h5>
                         <div className="from-section">
-                        <span className="from-section__text">You are looking for</span>
+                        <span className="from-section__text">You are looking for*</span>
                         <div className="form-tabs">
                             <div className="selecter">
                                 <FormControl required >
@@ -191,16 +191,16 @@ export default class FirstMainForm extends Component{
                                         id: 'age-native-required',
                                     }}
                                     >
-                                    <option  value={"R"}>React Only</option>
-                                    <option  value={"Ra"}>React + Api</option>
+                                    <option value={"R"}>React Only</option>
+                                    <option value={"Ra"}>React + Api</option>
                                     <option value={"RN"}>React Native (Mobily) Only</option>
-                                    <option  value={"RNa"}>React Native (Mobily) + Api</option>
+                                    <option value={"RNa"}>React Native (Mobily) + Api</option>
                                     </Select>
                                 </FormControl>
                             </div>                          
                         </div>
                         <div className="form-upload">
-                            <span className="from-section__text">Link to your design (you can also drag and drop a file)</span>
+                            <span className="from-section__text">Link to your design (you can also drag and drop a file)*</span>
                             <input onDragOver={() => this.setState({isShowFirst: "third"})} name="link" type="text" onChange={this.handleChangeFile} id="fileUpload" value={fileValue} placeholder="https://www.figma.com/yourdesign" />
                            <div className="form-next">
                                 <div className="form-upload__helper">
@@ -217,9 +217,9 @@ export default class FirstMainForm extends Component{
                                 </div>
                            </div>
                         </div>
-                        <span className="from-section__text">Number of pages</span>
+                        <span className="from-section__text">Number of pages*</span>
                         <input name="pages" onChange={this.handleChangeNumber} value={numberPages}  id="pages" type="number" placeholder="3" />
-                        <span className="from-section__text">Your e-mail</span>
+                        <span className="from-section__text">Your e-mail*</span>
                         <input name="email" type="email" onChange={this.handleChangeEmail} value={emailValue} placeholder="name@email.com" />
                         {isFrontOnly ? <Button className={buttonColor ? "dispn" : "disp"}  variant="contained" onClick={this.checkError}>{getStarted}</Button>
                         : <Button onClick={this.checkSecond}  className={buttonColor ? "dispn" : "disp"} variant="contained">{continueLabel}</Button>}

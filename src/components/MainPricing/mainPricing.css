@@ -14,12 +14,14 @@
     font-weight: 900;
     letter-spacing: 1.2px;
     margin-bottom: 76px;
+    font-family: "GTWalsheimProBold";
 }
 
 .pricing-wrapper h5{
     font-size: 30px;
     font-weight: 900;
     letter-spacing: 0.9px;
+    font-family: "GTWalsheimProBold";
 }
 
 .pricing-section {
@@ -46,6 +48,7 @@
     font-weight: 700;
     letter-spacing: 0.6px;
     display: flex;
+    font-family: "GTWalsheimProBold";
 }
 
 .pricing-section__list li img{
@@ -64,7 +67,8 @@
 .pricing-section__footer {
     font-size: 30px;
     font-weight: 900;
-    letter-spacing: 0.9px
+    letter-spacing: 0.9px;
+    font-family: "GTWalsheimProBold";
 }
 .pricing-section__footer a{
     text-decoration: underline;

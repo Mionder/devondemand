@@ -288,7 +288,7 @@
     .header .MuiButtonBase-root.MuiButton-root.MuiButton-contained.button_start.MuiButton-containedPrimary{
         font-size: 20px;
         margin: 10px 0px;
-        font-family: 'GTWalsheimPro';
+        font-family: "GTWalsheimProBold";
     }
     .header .mobile-menu ul li:first-child img{
         width: 100px;
