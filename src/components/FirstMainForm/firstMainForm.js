@@ -115,22 +115,24 @@ export default class FirstMainForm extends Component{
         this.validation();
     }
 
-    checkError =() => {
+    checkError = async() => {
         if (this.state.buttonColor === true){
-            this.setState({throwError: true});
+           await this.setState({throwError: true});
         }
-        else this.setState({throwError: false});
-        setTimeout(window.location.reload(),1000);
+        else await this.setState({throwError: false});
+        if(!this.state.throwError)
+            setTimeout(window.location.reload(),1000);
         
     }
-    checkSecond = async() => {
+    checkSecond = async() =>{
         if (this.state.buttonColor === true){
-            this.setState({throwError: true});
+           await this.setState({throwError: true});
         }
-        else this.setState({throwError: false});
+        else await this.setState({throwError: false});
         if(this.state.throwError === false)
             this.setState({isShowFirst: "second"})
     }
+    
 
     setValue = () => {
         console.log(this.state.isFrontOnly);
@@ -229,7 +231,7 @@ export default class FirstMainForm extends Component{
                         </div>
                     </div>
                     <div className="development-footer">
-                    <Link to="/privacy-policy"><span>By clicking on the button, you agree to our Terms of Service and have read and acknowledge our Privacy Policy.</span></Link>
+                    <Link to="/privacy-policy">By clicking on the button, you agree to our<span> Terms of Service and have read and acknowledge our Privacy Policy.</span></Link>
                     </div>
                </div>
             }
@@ -298,7 +300,7 @@ export default class FirstMainForm extends Component{
                      </div>
                  </form>
                  <div className="development-footer">
-                 <Link to="/privacy-policy"><span>By clicking on the button, you agree to our Terms of Service and have read and acknowledge our Privacy Policy.</span></Link>
+                 <Link to="/privacy-policy">By clicking on the button, you agree to our <span>Terms of Service and have read and acknowledge our Privacy Policy.</span></Link>
                  </div>
                 </div> 
             }
@@ -314,7 +316,7 @@ export default class FirstMainForm extends Component{
                             <DropzoneArea acceptedFiles={['image/*']} dropzoneText={"Drag & Drop your files here"} onChange={(files) => console.log('Files:', files)}/>
                         </form>
                         <div className="development-footer">
-                        <Link to="/privacy-policy"><span>By clicking on the button, you agree to our Terms of Service and have read and acknowledge our Privacy Policy.</span></Link>
+                        <Link to="/privacy-policy">By clicking on the button, you agree to our <span>Terms of Service and have read and acknowledge our Privacy Policy.</span></Link>
                         </div>
                     </div> 
 
