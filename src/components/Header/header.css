@@ -7,9 +7,6 @@
 
 .header{
     background-color: #fafafa;
-    position: sticky;
-    position: -webkit-sticky;
-    top: 0;
     z-index: 1;
 }
 
@@ -98,6 +95,7 @@
     letter-spacing: 0.6px;
     /* max-width: 170px; */
     max-height: 58px;
+    box-shadow: none;
 }
 
 .kiss_icon{
