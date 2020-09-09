@@ -445,9 +445,11 @@
         margin: 1px 0px 10px;
     }
     .development-form .MuiButton-contained {
-        font-size: 10px;
+        font-size: 8px;
         height: 32px;
         margin-top: 10px;
+        height: 28px !important;
+        min-height: 28px !important;
     }
     .development-footer{
         margin: 0px auto;
