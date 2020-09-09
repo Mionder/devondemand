@@ -18,7 +18,7 @@ const MainNotified = () => {
                         smooth={true}
                         offset={-70}
                         duration= {600}
-                        ><Button variant="contained" color="primary" href="#contained-buttons">Start now</Button></Link>
+                        ><Button variant="contained" color="primary">Start now</Button></Link>
             </div>
             <div className="notified-pic">
                 <img src={notified} alt="notified"/>

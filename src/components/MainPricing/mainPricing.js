@@ -17,6 +17,7 @@ const MainPricing = () => {
                     <li><img src={checkmark} alt="checkmark"/> <span>No contract</span></li>
                 </ul>
                 <p  className="pricing-section__desc">If you don’t have any active job posts you’ll still Have across to your career site and talent pool for no costs.</p>
+                <p  className="pricing-section__desc-mobile">Attract talent with beautiful job posts and manage candidates in an easy-to-use and powerful tool.</p>
                 <p  className="pricing-section__footer"><Link to="/faqs">Frequently Asked Questions</Link> around our pricing.</p>
               </div>
            </div>

@@ -18,6 +18,7 @@ const Work = () => {
                 <div className="work_wrapper">
                     <div className="work_area">
                         <button className="button_work">speak2leads</button>
+                        <button className="button_work-mobile">Watch the full video (2 min)</button>
                     </div>
                     <div className="speed_test">
                         <DoneIcon className="done_icon work_done" />

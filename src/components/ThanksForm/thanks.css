@@ -12,6 +12,9 @@
     letter-spacing: 1.2px;
     margin: 21px 0px;
 }
+.form button{
+    font-family: "GTWalsheimProBold";
+}
 
 .thanks_subtitle{
     opacity: 0.71;
@@ -102,10 +105,20 @@
     letter-spacing: 0.66px;
     margin-bottom: 13px;
 }
+.dispn{
+    background-color: #b3bbc4 !important;
+    min-height: 50px !important;
+    color: #000000 !important;
+}
+
+.disp{
+    background-color: #4b6fff !important; 
+    color: #ffffff !important;
+    min-height: 50px !important;
+}
 
 .MuiButtonBase-root.MuiButton-root.MuiButton-contained.button_form.MuiButton-containedPrimary{
-    background-color: #4b6fff;
-    min-height: 50px;
+    /* background-color: #4b6fff; */
 }
 @media screen and (max-width: 1300px){
     .form{
@@ -165,7 +178,7 @@
         border-radius: 4px;
         border: 2px solid #2a62ff;
         background-color: #f2f5ff;
-        padding: 4px 20px 3px 18px;
+        padding: 3px 20px 3px 18px;
         outline: none;
     }
     .form_but{
@@ -185,6 +198,10 @@
         font-size: 12px;
         letter-spacing: 0.36px;
     }
+    img.smile_form{
+        width: 103px;
+        height: auto;
+    }
     .smile_form{
         margin-top: 13px;
     }
@@ -198,11 +215,18 @@
     .success_header-item img{
         width: 85px;
     }
+    .form button{
+        font-family: "GTWalsheimProBold";
+        min-height: 28px !important;
+        font-size: 8px !important;
+        letter-spacing: 0.11px !important;
+        line-height: 11px !important;
+    }
 }
 
 @media(max-width: 520px){
     #looking_for, #type_website{
-        flex-direction: column;
+        /* flex-direction: column; */
     }
     .form_but,
     .looking_for-active, .type_website-active{
@@ -226,5 +250,16 @@
     }
     .success_footer-item:first-child{
         font-size: 14px;
+    }
+    .title_form_success{
+        color: #000000;
+        font-family: "GTWalsheimProBlack";
+        font-size: 22px;
+        letter-spacing: 0.66px;
+        padding-bottom: 13px;
+    }
+    .success_footer-item:first-child{
+        font-size: 12px !important;
+        letter-spacing: 0.36px !important;
     }
 }

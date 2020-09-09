@@ -12,7 +12,10 @@
     color: green;
 }
 .bi-cloud-arrow-up{
-    display: none;
+    display: block;
+    position: absolute;
+    top: 6px;
+    left: 35px;
 }
 .MuiDropzoneArea-root{
     background-color: #f2f5ff !important;
@@ -241,11 +244,20 @@ input[type='number'] {
     #uploadFile{
         top: 21px;
     }
-    third-form {
+    .third-form {
         border-radius: 10px;
         background-color: #deeaf6;
         padding: 8px 12px;
         position: relative;
+    }
+    
+}
+@media screen and (max-width: 380px){
+    #uploadFile{
+        top: 0px;
+    }
+    .btn--browse{
+        top: 0px;
     }
     
 }

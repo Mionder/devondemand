@@ -12,7 +12,7 @@
 }
 
 .success_footer{
-    margin: 45px 0px;
+    padding: 45px 0px;
 }
 
 .success_footer-list{
@@ -46,5 +46,16 @@
     }
     .success_footer-item:first-child{
         font-size: 14px;
+    }
+}
+@media screen and (max-width: 400px){
+    .success_header-item button{
+        width: 155px !important;
+        mIN-width: 155px !important;
+        min-height: 34px !important;
+        font-size: 12px !important;
+        font-weight: 900;
+        letter-spacing: 0.36px;
+        padding: 10px 22px 9px 15px !important;
     }
 }

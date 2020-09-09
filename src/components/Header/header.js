@@ -4,7 +4,6 @@ import { Link } from 'react-scroll'
 import "./header.css";
 import CloseIcon from '@material-ui/icons/Close';
 import Button from '@material-ui/core/Button';
-import KissIcon from "./img/kiss.png";
 import Logo from "./img/devondemand.png";
 import github from "./img/github.svg";
 import instagram from "./img/instagram.svg";
@@ -13,10 +12,10 @@ import twitter from "./img/twitter.svg";
 const Header = () => {
   const [isShowBanner, setShowBanner] = useState(true);
 
-  // const container = document.querySelector(".mob-humburger");
-
-  // container.onclick = function(){
-  //   container.classList.toggle("open");
+  const closeBanner = () => {
+    setShowBanner(false);
+    document.getElementById("burger-mobile").style.top = "30px";
+  }
   return (
     <header className="header">
       {
@@ -27,7 +26,7 @@ const Header = () => {
             <h5 className="discount_info">
               Product Hunt launch : <span> get a $50 discount until September 13, 2020 😘</span> 
             </h5>
-            <div className="icon_discount" onClick={() => setShowBanner(false)}>
+            <div className="icon_discount" onClick={() => closeBanner()}>
               <CloseIcon className="icon_close" />
             </div>
           </div>
@@ -92,14 +91,14 @@ const Header = () => {
       <div className="mobile-menu">
       <input id="burger" type="checkbox" />
 
-        <label className="mob-humburger" htmlFor="burger">
+        <label className="mob-humburger" id="burger-mobile" htmlFor="burger">
             <span></span>
             <span></span>
             <span></span>
         </label>
         <nav>    
           <ul>
-              <li><Linking to="/"><img src={Logo} alt="logo"/></Linking></li>
+              <li className="logo"><Linking to="/"><img src={Logo} alt="logo"/></Linking></li>
               <li><Link
                 activeClass=""
                 to="process-wrapper"

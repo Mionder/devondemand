@@ -184,6 +184,10 @@
 .development-info  .MuiAlert-root {
     padding: 5px 22px;
     font-size: 12px;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 2;
 }
 
 .previous-step{
@@ -232,7 +236,7 @@
 
 .form-check a{
     color: #6772e5;
-    width: 42px;
+    width: 44px;
     height: 44px;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
     background-color: #ffffff;

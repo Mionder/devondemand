@@ -30,13 +30,13 @@ a{
   width: 100%;
   height: auto;
   max-height: 777px;
-  min-height: 500px;
+  min-height: 777px;
 }
 
 @media screen and (max-width: 1300px){
   .container{
     max-width: unset;
-    width: 90%;
+    /* width: 90%; */
   }
 }
 @media screen and (max-width: 1024px){

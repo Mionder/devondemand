@@ -21,7 +21,7 @@ const MainJoin = () => {
                         smooth={true}
                         offset={-70}
                         duration= {500}
-                        ><Button variant="contained" color="primary" href="#contained-buttons">Start now</Button></Link>
+                        ><Button variant="contained" color="primary">Start now</Button></Link>
                 </div>
            </div>
        </div>

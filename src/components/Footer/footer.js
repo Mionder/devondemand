@@ -24,9 +24,12 @@ const Footer = () => {
               <h2 className="services_title">
                 Generate powerful content, reap more than conversion
               </h2>
+              <h2 className="services_title-mobile">This is our working process.</h2>
               <div className="services_subtitle">
                 From boring content campaign to unexpected one, there is us. Break your email vision & give your content something your subscribers have never seen before.
               </div>
+              <p className="services_subtitle-mobile">Attract talent with beautiful job posts and manage
+candidates in an easy-to-use and powerful tool.</p>
               <div className="services_button">
                 <Link
                   activeClass=""
@@ -49,6 +52,9 @@ const Footer = () => {
             <div className="start-form">
               <h2 className="start_title">
                 Try dev on demand today!
+              </h2>
+              <h2 className="start_title-mobile">
+                Try devondemand now!
               </h2>
               <div className="start_button">
               <Link
