@@ -56,7 +56,7 @@ input[type='number'] {
     -moz-appearance: textfield;
 }
 
-.development-footer a span{
+.development-footer span a {
     text-decoration: underline;
 }
 .MuiGrid-root.MuiDropzonePreviewList-root.MuiGrid-container.MuiGrid-spacing-xs-8{

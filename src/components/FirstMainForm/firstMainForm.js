@@ -225,7 +225,7 @@ export default class FirstMainForm extends Component{
                         </div>
                     </div>
                     <div className="development-footer">
-                    <Link to="/privacy-policy">By clicking on the button, you agree to our<span> Terms of Service and have read and acknowledge our Privacy Policy.</span></Link>
+                    <span>By clicking on the button, you agree to our <Link to="/privacy-policy">Terms of Service and have read and acknowledge our Privacy Policy.</Link></span>
                     </div>
                </div>
             }

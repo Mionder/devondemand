@@ -151,14 +151,15 @@
     bottom: -90px;
 }
 
-.development-footer a{
+.development-footer span,
+.development-footer span a{
     color: #909090;
     font-size: 14px;
     font-weight: 400;
     line-height: 22px;
 }
 
-.development-footer a:hover{
+.development-footer span a:hover{
     color: #686565;
     transition: 0.3s;
 }
@@ -456,7 +457,7 @@
         bottom: auto;
         left: auto;
     }
-    .development-footer a{
+    .development-footer span{
         font-size: 8px;
         line-height: 0px;
     }
